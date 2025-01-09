@@ -8,7 +8,13 @@ async function Home() {
 
   return (
     <div className="w-full flex-center flex-col">
-      <Toolbar/>
+      <p className="text-white text-center text-lg mb-4">
+        Ideal Spaces
+      </p>
+
+      <div className="mt-20">
+        <Toolbar/>
+      </div>
     </div>
   );
 };

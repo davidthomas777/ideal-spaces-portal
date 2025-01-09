@@ -8,7 +8,7 @@ const LoginButton = () => {
     };
 
     return (
-        <button onClick={handleLogin} className="px-4 py-2 bg-red-500">
+        <button onClick={handleLogin} className="px-4 py-2 bg-red-500 mt-5">
             Login
         </button>
     );
