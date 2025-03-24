@@ -25,17 +25,18 @@ export const options = {
                 }
                 
             },
+            
             async authorize(credentials) {
                 // This is where we would retrieve data from whatever database we use
                 // https://next-auth.js.org/configuration/providers/credentials
                 const user = { id: "20", name: "David", password: "next-auth" }
                 // ^ This is an example user, we will change the const user to fetch from a database like NoSQL
 
-                if (credentials?.username === user.name && credentials?.password === user.password) {
-                    return user
-                } else {
-                    return null
-                }
+                if (credentials?.username === user.name && credentials?.password === user.password)
+                    return user;
+                else
+                    return null;
+                
             }
         })
     ], 
